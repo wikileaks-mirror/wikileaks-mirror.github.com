@@ -3,8 +3,8 @@ all: index.html
 %.html: %.asc
 	asciidoc $<
 
-open:
-	firefox index.html
+open: index.html
+	firefox $<
 
 push: index.html
 	git commit -a -m '...'
